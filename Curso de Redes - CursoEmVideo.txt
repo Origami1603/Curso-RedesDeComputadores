@@ -1,0 +1,347 @@
+    	- AULA 001 -
+
+Wi-fi analise ferramenta para ver os canais/ qualidade das redes  
+
+	- AULA 002 -
+
+explica mlhor o wi-fi analisy... a interferencia poder ser causada pelo ambiente... e outros dispositivos no mesmo canal podem interferir tambem
+PADRÕES de redes
+sempre é bom utilizar o canal com menos gente...
+!!!SEMPRE TENHA CUIDADO COM SEUS DADOS NA INTERNET!!!
+tecnologia wds... troca de antena/rotearor, mas sem mudar a rede 
+
+	-AULA 003-
+
+equipamento para utilizar nos cabos
+alicate de clip
+decabador
+conectores 
+testadores
+
+aparelhos 
+repetidores de wi-fi
+roteador
+
+     	-AULA 004-
+
+ historia da internet... 
+evolução da internet aconteceu na epoca da guerra fria, para proteção e compartilhamento de dados...
+
+o que é LCP?
+é um protocolo que permitia a comunicação e compartilhamento de dados entre computadores, mas para isso acontecer era necessario todos os computadores se desligasem da rede para aver a comunicação de dois computadores no maximo
+
+o que é protocolo?
+são regras para facilitar e permitir a comunicação entre eles
+
+protocolo TCP/IP?
+é um modelo de 4 camadas... o TCP quebrava os dados em bloquinhos e IP colocava identificações neles para manda esses dados para outros computadores sem a necessidade de toda a rede ser fecha... já o TCP que recebia os dados fragmentados remonta os dados novamente
+DNS é tipo uma agenda que é um "protocolo"... para não ser necessario vc decorar o numero de identificador eletronico
+
+eternet 
+é basicamente uma é identificando se o meu nodem esta conectado a minha LAN
+
+LIVROS
+trabalhando com redes de computadores de camila ceccatto
+redes de computadores de tanenbaum
+
+	-AULA 005-
+
+metodologia de cliente-servidor
+cliente é o que pede serviço
+servidor é o que disponibiliza serviço
+
+alguns tipos de servidores
+(são maquinas que vão prover algo... e nem sempre são boas em tudo... mas são bons em algo especifico)
+
+CDN é uma tecnoligia que permite fragmentar e coletar informaçoes em mines servidores proximos.. em vez de pegar de um servidor distante e com a informação completa
+
+	-AULA 006-
+
+Classificação por modelo computacional
+ponta a ponto... rede que não tem a separação entre cliente e servidor, ou seja, todos vão realizar o papel de um servidor...
+cliente servidor... rede que tem um computador que pede um serviço e o servidor disponibiliza o serviço e tem que ter um ADM
+
+Classificação por abrangência
+PAN... area pessoal... alcance curto... e sem dispositivos intermediarios... 10m
+LAN... area local... alcance medio... e uma rede que estão no mesmo local "fisico"... 100m
+CAN... area campus... alcance alto... são varias lan juntas... 1km
+MAN... area metropolitana... alcance muito alto... 10km
+WAN... area aprangente... alcance extremanente alto... 100km
+
+Topologia.. é um arranjo
+fisica... forma que os computadores estão organizados fisicamente
+logica... forma que os dados vão chegar ate eles
+
+Topologia fisica
+estrela... 
+barramento...
+anel...
+
+Topologia logica
+são tecnologias de comunicação
+
+
+	-AULA 007-
+
+para que serve um endereço IP?
+é um endereço eletronico...as pessoas não tem o mesmo endereço IP... são "numeros em binario" para computadores... mas para nos são 4 hoquidetos...
+
+ex.: XXX.XXX.X.XX... conjunto1.conjunto2.conjunto3.conjunto4
+
+as classes de um IP é determinada pelo primeiro conjunto de numeros
+classes IP
+A...0 a 127... 2^24possibilidades para pessoas 
+B...128 a 191... 2^16possibilidades para pessoas
+C...192 a 223... 2^8possibilidades para pessoas
+D...224 a 239... multicast
+E...240 a 255... teste de novas tecnologias
+
+para que serve a classificação?
+
+
+unicast... mensagem para um host
+broadcast... para todos os hosts de uma rede
+multicast... para um grupo seleto de hosts
+anycast... para todos os hosts mais proximos
+
+existe o IPv4 e o IPv6
+
+	-AULA 008-
+
+IPs restritos e privados
+
+dosmeticas e locais
+10.0.0.0 /8... 
+172.16.0.0 /12...
+192.168.0.0 /16...
+
+127.0.0.0 é a propria maquina ou dispositivo
+169.254.0.0 é o apipa...ou o IP de ERRO... é quando não a ninguem disponipiliza algum IP
+
+DHCP- é o servidor que te entrega os IPs... eu acho
+
+como é disponipilizado os IPs
+
+o que é mascara?
+é o que indicada para o computator os IPs das redes
+
+classes de MASCARAS?
+A- 255.0.0.0...ou R.H.H.H... indica que o primeiro conjunto é o IP da rede
+B- 255.255.0.0...R.R.H.H... indica que os 2 primeiros conjuntos são o IP da rede
+C- 255.255.255.0...R.R.R.H... indica que os 3 primeiros conjuntos são o IP da rede
+
+ex.:
+	rede	|	host	|	broadcast
+morada		| casas		| portaria
+192.168.1.0	| 192.168.1.0	|  192.168.1.255
+		| ate 		|
+		| 192.168.1.254 |	
+
+	-AULA 009-
+
+tecla windows + R... para poder abrir o CMD
+
+o comando ping + "dominio do web site ou ip da maquina"
+isso serve para testa a rede ver se esta funcionando corretamente
+
+o ping + 127.0.0.1 é para ver de um jeito superficial se sua placa de rede esta funcionando corretamente
+
+para desativa ou habilita as configurações da placa de rede... basta clicar com o botão direito do mauser no simbolo da internet e acessar as configurações de rede
+
+o que é TTL?
+tempo de vida do pacote na rede... quanto maior o tempo´pior... pois quer dizer que ele demorou para chegar no endereço
+
+o comando tracert + "dominio do web site ou ip da maquina"
+serve para ver a rotado dos dados ate o servidor... designado
+
+se o tempo de latencia estiver alto significa que esta com dificuldade de passar por aquela determinada rota
+
+o comando ipconfig... ou ipconfig /all
+serve para ver todas as informações das placas de redes, adabitadores conectados e IPs... endereço mac tambem
+
+gatway é roteador que vc esta usando
+
+	-AULA 010-
+
+para realizar a configuração basica do roteador é necessario saber o IP dele... e então coloca-lo no navegador e saber seu admin e senha
+
+IP dinamico do roteador
+toda vida que o roteador conectar com o modem ele vai buscar um "novo" IP
+
+IP estático do roteador
+o IP é fixiço
+
+PPPoE
+é para o roteador se comunicar direto com a internet/operadora sem a necessidade do modem
+
+L2TP
+é um protocolo de sessão... eu acho
+
+PPTP 
+é um protocolo de sessão... eu acho
+
+Clonar o MAC é para coisas mais especivicas.... explicar melhor depois
+
+configurar nome e senha da rede e a banda da rede... tipo 2.4GHz ou 5GHz
+
+Ocultar o SSID é para ocultar a rede... assim quando alguem quiser se conecta vai ser necessario o nome e a senha da rede
+
+para abrir o bloco de notas mais rapido basta coloca Wimdows + R e digitar "notepad"
+
+	-AULA 011-
+
+para realizar a configuração avançada do roteador é necessario saber o IP dele... e então coloca-lo no navegador e saber seu admin e senha
+
+segurança da rede
+WPA/WPA2-pessoal... é uma rede que não necessita de um servidor para se conectar na rede
+WPA/WPA2-empresarial... é uma rede que já necessita de um servidor para você ter o acesso a rede
+
+criptografia da rede
+automatico
+
+modo da rede
+802.11n... melhora o desempenho e piora compatibilidade 
+802.11g/n misto 
+802.11b/g/n misto... piora o  desempenho e melhora a compatibilidade 
+
+canal
+1, 6, 11... sempre tente pegar o canal com menos gente usando
+aplicativo para poder ver as informaçoes sobres as redes... aplicativo XIRRUS
+
+poder de transmição... é o raio de alcance do roteador
+
+NÃO PODE DEIXAR PERTO DE METAL... POIS REFLETE O SINAL
+
+	-AULA 012-
+
+qual a vantagem de dividir a rede em sub-redes?
+para os computadores não se verem...
+
+uma rede só 
+ex.:
+	rede	|	host	|	broadcast |   mascara
+morada		| casas		|    portaria     |   255.255.255.0
+192.168.1.0	| 192.168.1.0	|    192.168.1.255|
+		| ate 		|		  |
+		| 192.168.1.254 |	          |
+
+IPs da rede sempre seram pares e os do broadcast sempre seram impares 
+
+o que vai determinar a existecia da sub-rede é a mascara
+só vai existir a sub-rede se existi um tal de Hocteto misto
+EX.: 255.255.255.192 ... 255.255.248.0
+
+NÃO PODE EXISTIR MAIS DE UM OCTETO MISTO EM UMA MASCARA
+PARA SABER SE É IP OU MASCARA DE REDE BASTA CONFERTER O NUMERO PARA BINARIO... SE TODOS OS DA DIREITA FOREM 0 E OS DA ESQUERDA 0 É UMA MASCARA DE REDE
+
+PASSO 1:
+olhar para a mascara e identificar o hocteto misto... todo o calculo acontece no local que o octeto esta
+PASSO 2:
+determinar o salto... continha simples 256 - numero misto
+PASSO 3:
+determinar o IP da rede atravez do salto
+PASSO 4:
+determinar o IP da broadcast atravez do salto
+PASSO 5:
+determinar o IP do host
+
+o host sempre vai ser "maior" que o valor da rede e "menor" que o valor do broadcast
+a soma do salto com ele mesmo em determinadas vezes tem que dar 256
+
+ 
+Ex.:
+
+     Mascara     |     Rede     |     Host      |     Broadcast     
+ 255.255.255.192 |  192.168.2.0 | 192.168.2.1   |    192.168.63
+                 |              |a 192.168.2.62 |
+                 | 192.168.2.64 | 192.168.2.65  |    192.168.127
+                 |              |a 192.168.2.126|
+                 | 192.168.2.128| 192.168.2.129 |    192.168.191
+                 |              |a 192.168.2.190|
+                 | 192.168.2.192| 192.168.2.193 |    192.168.255
+                 |              |a 192.168.2.254|
+                 | 192.168.2.256|               |
+
+	-AULA 013-
+
+cabo coaxial:
+
+cabo par trançado:
+
+cabo fibra optica:
+
+
+	-AULA 014-
+
+DICA: PARA DEIXAR MAIS FACIL DE COLOCAR OS CABOS NO CONECTOR É NECESSARIO "PENTEAR" OS FIOS DO CABO... tente deixar os fios retos... e segure com força
+
+cabo UTP catecoria 5e:
+RJ45{
+T568A{branco-verde, verde, branco-laranja, azul, branco-azul, laranja, branco-marrom, marrom}
+T568B{branco-laranja, laranja, branco-verde, azul, branco-azul, verde, branco-marrom, marrom}
+}
+
+cabo UTP catecoria 6:
+
+cabo STP:
+
+	-AULA 015-
+
+tomada de superficie de rede
+
+	-AULA 016-
+
+como bloquear alguém do meu wi-fi?
+acesse o roteado e va para ver as estatisticas no roteador e então veja os endereços MAC para copiar o MAC  e achar a aba que permite/bloqueia o acesso ao wi-fi... esse metodo serve para funciona para permitidos ou bloqueados basta selecionar o modo
+para adicionar um dispositiivo novo só é necessario cadastras o MAC dos dispositivos
+o MAC pode ter .. ou -
+
+	-DÚVIDAS 001-
+
+referencias bibiograficas
+1- Informatica conceitos basicos
+2- Use a cabeça! Redes de computadores
+3- Redes de computadores de Douglas rocha
+4- Cisco CCNA
+5- Redes de computadores de Tanenbaum
+6- Organização de computadores de Tanenbaum
+
+	-DÚVIDAS 002-
+
+......
+
+	-DÚVIDAS 003-
+
+ abrindo o Roteador Cisco 1818
+"roteador serve para dividir as redes"
+
+tem como realizar uma emenda no cabo de rede... sim, mas não é recomendado
+
+	
+	-AULA 017-
+
+pratica com o simulador cisco
+
+	-AULA 018-
+
+praticando com o simulador cisco - uma rede com um servidor conectado a internet
+
+	-AULA 019-
+
+criando uma rede unica usando o WDS
+
+configura o roteador1(mestre)
+configurar o o rotisdor2(escravo) para a desativar o DHCP e ativar o WDS
+para poder configura vai ser necessario o Pc esta conectado na mesma rede do roteador2(escravo)   e com o IP fixo
+
+recomendado para ser utilizado com 2 roteadores
+
+
+	-AULA 020-
+
+
+ 	-AULA 021-
+
+Utilizando o repetidor wi-fi
+
+utilize seu manual do repetidor
